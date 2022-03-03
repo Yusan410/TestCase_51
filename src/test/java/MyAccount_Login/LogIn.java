@@ -27,7 +27,7 @@ public class LogIn {
 		driver.manage().window().maximize();
 
 	}
-    @Ignore
+    
 	@Test
 	public void test1() {
 
