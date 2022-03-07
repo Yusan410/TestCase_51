@@ -355,6 +355,7 @@ public class ShopTest {
 				
 				
 	}
+    
     @Test
     public void test12() throws InterruptedException {
     	
@@ -375,22 +376,37 @@ public class ShopTest {
 		
 		//8) The total always < subtotal because taxes are added in the subtotal
 		
+		//9) The tax rate variers for India compared to other countries
+		//10) Tax rate for indian should be 2% and for abroad it should be 5%
+		
+	String basketTotal = driver.findElement(By.xpath("//*[@id=\"page-34\"]/div/div[1]/div/div")).getText();
+	
+	
+	Thread.sleep(2000);
+	
+	System.out.println(basketTotal);
+	
+	
+	System.out.println("-------------------------------------------------");
+		
 	String subtotal = driver.findElement(By.xpath("//td[@data-title='Subtotal']")).getText().replace("₹", "");
 	
 	Thread.sleep(2000);
 	
-	double dsubtotal = Double.parseDouble(subtotal);
+	double Subtotal = Double.parseDouble(subtotal);
 	
-	double indiaTaxRate = 0.05;
+	System.out.println(Subtotal);
 	
-	double indiatotal = dsubtotal * indiaTaxRate;
+	double IndiaTaxRate = 0.02;
+	
+	double Indiatotal = Subtotal * IndiaTaxRate;
 	
 	
-	System.out.println("\n~With India Tax Rate~\nSubtotal : ₹" + dsubtotal + "\n" + "India Tax Rate(2%) : ₹"
-			+ (dsubtotal * indiaTaxRate) + "\n" + "Total : ₹" + (dsubtotal + indiatotal));
+	System.out.println("\n~With India Tax Rate~\nSubtotal : ₹" + Subtotal + "\n" + "India Tax Rate(2%) : ₹"
+			+ (Subtotal * IndiaTaxRate) + "\n" + "Total : ₹" + (Subtotal + Indiatotal));
 	
     	
-    	
+    
     	
     }
 	
