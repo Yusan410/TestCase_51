@@ -52,7 +52,7 @@ public class ShopTest {
 
 		Actions move = new Actions(driver);
 
-		Action action = (Action) move.dragAndDropBy(sliders, -27, 0).build();
+		Action action = (Action) move.dragAndDropBy(sliders, -28, 0).build();
 		action.perform();
 
 		driver.findElement(By.xpath("//*[@id=\"woocommerce_price_filter-2\"]/form/div/div[2]/button")).click();
@@ -355,7 +355,7 @@ public class ShopTest {
 				
 				
 	}
-    
+    @Ignore
     @Test
     public void test12() throws InterruptedException {
     	
