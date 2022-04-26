@@ -33,5 +33,11 @@ public class dental {
 		Thread.sleep(3000);
 		
 	driver.findElement(By.xpath("/html/body/div[4]/div/div[2]/img")).click();
+	
+	
+	
+	
+	driver.findElement(By.id("service-button")).click();
+	
 	}
 }
