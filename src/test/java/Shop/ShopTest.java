@@ -37,7 +37,7 @@ public class ShopTest {
 		driver.manage().window().maximize();
 	}
 
-	@Ignore
+	
 	@Test
 	public void test() throws InterruptedException {
 

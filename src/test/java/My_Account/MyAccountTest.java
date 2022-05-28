@@ -55,7 +55,7 @@ public class MyAccountTest {
 
 		driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/nav/ul/li[1]/a")).click();
 
-		// 9) User must view Dashboard of the site
+		//// 9) User must view Dashboard of the site
 
 		String Dashboard = driver.findElement(By.xpath("//*[@id=\"page-36\"]/div/div[1]/div")).getText();
 

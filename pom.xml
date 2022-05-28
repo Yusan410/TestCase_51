@@ -14,10 +14,10 @@
   
   
   
-  <dependency>
+ <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.0.3</version>
+    <version>5.1.1</version>
 </dependency>
   
   
@@ -27,6 +27,13 @@
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
     <version>4.13.2</version>
+    
+</dependency>
+
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>4.5.1</version>
     
 </dependency>
 
